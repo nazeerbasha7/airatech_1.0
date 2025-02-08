@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="airalogo.png" alt="JVS IT Logo" class="logo">
+        </div>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <div class="navbar-right">
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i> Ameerpet, Hyderabad
+            </div>
+            <div class="info">
+                <i class="fas fa-phone-alt"></i> +91 9030 913 914
+            </div>
+            <button class="register-btn">REGISTER NOW</button>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="#">Certifications</a>
+        <a href="#">Internships</a>
+        <a href="#">Placements</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" onclick="closeMenu()">X</button>
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="#">Certifications</a>
+        <a href="#">Internships</a>
+        <a href="#">Placements</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+        <a href="#" class="mobile-register-btn">REGISTER</a>
+    </div>
+
+
+
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="linuximg.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="linuximg.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="linuximg.jpg" alt="Slide 3"></div>
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Course Cards Section -->
+    <div>
+        <h1 class="course-heading">Our Professional Courses</h1>
+    <div class="course-container">
+         <!-- Course Card 1 -->
+         <div class="course-card">
+            <div class="course-image">
+                <img src="linuximg.jpg" alt="Course Image">
+            </div>
+            <div class="course-content">
+                <h3>Linux Administration </h3>
+                <p>Linux administration involves managing and configuring Linux-based operating systems, ensuring system security, performance, and reliability.</p>
+            </div>
+             <!-- Sub-courses (Initially Hidden) -->
+    <div class="sub-courses">
+        <div class="sub-course" data-link="linux-basics.html">Linux Basics</div>
+        <div class="sub-course" data-link="shell-scripting.html">Shell Scripting</div>
+        <div class="sub-course" data-link="server-management.html">Server Management</div>
+        <div class="sub-course" data-link="security.html">Linux Security</div>
+    </div>
+            <div class="course-footer">
+                <p><i class="far fa-calendar-alt"></i> Duration: 2 Months</p>
+                <button class="enroll-btn">Enroll</button>
+            </div>
+        </div>
+ 
+    <!-- Course Card 2 -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="linuximg.jpg" alt="Linux Administration Course">
+    </div>
+    <div class="course-content">
+        <h3>Linux Administration</h3>
+        <p>Linux administration involves managing and configuring Linux-based operating systems, ensuring system security, performance, and reliability.</p>
+    </div>
+
+    <!-- Sub-courses (Initially Hidden) -->
+    <div class="sub-courses">
+        <div class="sub-course" data-link="linux-basics.html">Linux Basics</div>
+        <div class="sub-course" data-link="shell-scripting.html">Shell Scripting</div>
+        <div class="sub-course" data-link="server-management.html">Server Management</div>
+        <div class="sub-course" data-link="security.html">Linux Security</div>
+    </div>
+
+    <div class="course-footer">
+        <p><i class="far fa-calendar-alt"></i> Duration: 2 Months</p>
+        <button class="enroll-btn">Enroll</button>
+    </div>
+</div>
+
+ 
+
+        <!-- Course Card 3 -->
+        <div class="course-card">
+            <div class="course-image">
+                <img src="linuximg.jpg" alt="Course Image">
+            </div>
+            <div class="course-content">
+                <h3>Linux Administration </h3>
+                <p>Linux administration involves managing and configuring Linux-based operating systems, ensuring system security, performance, and reliability.</p>
+            </div>
+             <!-- Sub-courses (Initially Hidden) -->
+    <div class="sub-courses">
+        <div class="sub-course" data-link="linux-basics.html">Linux Basics</div>
+        <div class="sub-course" data-link="shell-scripting.html">Shell Scripting</div>
+        <div class="sub-course" data-link="server-management.html">Server Management</div>
+        <div class="sub-course" data-link="security.html">Linux Security</div>
+    </div>
+            <div class="course-footer">
+                <p><i class="far fa-calendar-alt"></i> Duration: 2 Months</p>
+                <button class="enroll-btn">Enroll</button>
+            </div>
+        </div>
+
+        <!-- Course Card 4 -->
+        <div class="course-card">
+            <div class="course-image">
+                <img src="linuximg.jpg" alt="Course Image">
+            </div>
+            <div class="course-content">
+                <h3>Linux Administration </h3>
+                <p>Linux administration involves managing and configuring Linux-based operating systems, ensuring system security, performance, and reliability.</p>
+            </div>
+             
+            <div class="course-footer">
+                <p><i class="far fa-calendar-alt"></i> Duration: 2 Months</p>
+                <button class="enroll-btn">Enroll</button>
+            </div>
+        </div>
+
+        <!-- Course Card 5 -->
+        <div class="course-card">
+            <div class="course-image">
+                <img src="linuximg.jpg" alt="Course Image">
+            </div>
+            <div class="course-content">
+                <h3>Linux Administration </h3>
+                <p>Linux administration involves managing and configuring Linux-based operating systems, ensuring system security, performance, and reliability.</p>
+            </div>
+            
+            <div class="course-footer">
+                <p><i class="far fa-calendar-alt"></i> Duration: 2 Months</p>
+                <button class="enroll-btn">Enroll</button>
+            </div>
+        </div>
+
+        <!-- Course Card 6 -->
+        <div class="course-card">
+            <div class="course-image">
+                <img src="linuximg.jpg" alt="Course Image">
+            </div>
+            <div class="course-content">
+                <h3>Linux Administration </h3>
+                <p>Linux administration involves managing and configuring Linux-based operating systems, ensuring system security, performance, and reliability.</p>
+            </div>
+              
+            <div class="course-footer">
+                <p><i class="far fa-calendar-alt"></i> Duration: 2 Months</p>
+                <button class="enroll-btn">Enroll</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Career Section -->
+    <section class="career-section">
+        <h1>Choose Aira IT Solutions for career growth</h1>
+        <p class="subheading">Best Courses – we have the best courses to become a software professional</p>
+        
+        <div class="features">
+            <div class="feature">
+                <img src="education.png" alt="Learn from Experts">
+                <h3>Learn from experts</h3>
+                <p>Our real-time professionals help you learn any new technology in an easy manner.</p>
+            </div>
+            
+            <div class="feature">
+                <img src="quick-response.png" alt="Flexible Timings">
+                <h3>Flexible Timings</h3>
+                <p>Learn anytime from anywhere. Utilize your free time to learn new technology with our experts.</p>
+            </div>
+            
+            <div class="feature">
+                <img src="students.png" alt="150K+ students">
+                <h3>1K+ students</h3>
+                <p>95% positive feedback. Have a look at our participant’s video reviews, and it says all.</p>
+            </div>
+
+            <div class="feature">
+                <img src="open-book.png" alt="Best Courses">
+                <h3>Best Courses</h3>
+                <p>We have the best courses to become a software professional.</p>
+            </div>
+
+            <div class="feature">
+                <img src="map.png" alt="Where we are">
+                <h3>Where we are</h3>
+                <p>Sri Sai Arcade, Door No. 7-1-455, 2nd Floor, Hyderabad, Telangana.</p>
+            </div>
+
+            <div class="feature">
+                <img src="support.png" alt="Fast Support">
+                <h3>Fast Support</h3>
+                <p>We have fast support for students from Monday to Saturday, 9 AM to 7 PM.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="learn-container">
+        <h1>Learn Software Courses from the Expert Trainers</h1>
+        <p>Explore new and trending free online courses.</p>
+
+        <div class="grid-container">
+            <div class="box">
+                <img src="online.png" alt="Online Classes">
+                <span class="tag">Online Classes</span>
+            </div>
+            <div class="box">
+                <img src="mobile.png" alt="Online Learning">
+            </div>
+            <div class="box text-box">
+                <h2><span>Smart Learning</span> in the Digital Era</h2>
+            </div>
+            <div class="box">
+                <img src="offline.png" alt="Offline Classes">
+                <span class="tag">Offline Classes</span>
+            </div>
+            <div class="box">
+                <img src="group.png" alt="Group Learning">
+            </div>
+        </div>
+    </section>
+
+
+
+     
+    <div class="google-container">
+        <div class="contact-info">
+            <h2>We <span>love</span> to help you</h2>
+            <p>Explore new and trending online courses.</p>
+            <p><strong>Phone:</strong> 040-2374 6666 / 2373 4842</p>
+            <p><strong>Email:</strong> <a href="mailto:support@nareshit.com">airait@gmail.com</a></p>
+            <p><strong>Location:</strong> Vanijya Tower, Road Number 6, Dharma Reddy Colony Phase 1, Kukatpally, Hyderabad</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2543117878054!2d78.39406787468529!3d17.495369499686326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ed768ec427%3A0xa38d3a4bc318f1cd!2sVanijya%20Tower%2C%20Road%20No.%206%2C%20Dharma%20Reddy%20Colony%20Phase%20I%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500085!5e0!3m2!1sen!2sin!4v1738932294001!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+     <div class="companies-scoller">
+        <h3 style="padding-top: 50px;">Our Trainees are Working With Leading MNC's</h3>
+        <div class="marquee-container">
+            <div class="marquee">
+                <img src="company1.png" alt="IBM">
+                <img src="company2.png" alt="Wipro">
+                <img src="company3.png" alt="TCS">
+                <img src="company4.png" alt="Oracle">
+                <img src="company5.png" alt="RedHat">
+                <img src="company6.png" alt="Infosys">
+                <img src="company7.png" alt="HCL">
+                <img src="company8.png" alt="Cognizant">
+                <img src="company9.png" alt="Cognizant">
+    
+                <img src="company1.png" alt="IBM">
+                <img src="company2.png" alt="Wipro">
+                <img src="company3.png" alt="TCS">
+                <img src="company4.png" alt="Oracle">
+                <img src="company5.png" alt="RedHat">
+                <img src="company6.png" alt="Infosys">
+                <img src="company7.png" alt="HCL">
+                <img src="company8.png" alt="Cognizant">
+                <img src="company9.png" alt="Cognizant">
+    
+    
+                 
+            </div>
+     </div>
+
+     
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+    <!-- Scripts -->
+    <script>
+        function openMenu() {
+            document.getElementById("mobileMenu").style.left = "0";
+        }
+        function closeMenu() {
+            document.getElementById("mobileMenu").style.left = "-100%";
+        }
+
+        document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+    </script>
+
+      
+
+<script>
+    function openMenu() { document.getElementById("mobileMenu").style.left = "0"; }
+        function closeMenu() { document.getElementById("mobileMenu").style.left = "-100%"; }
+        document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+    let index = 0;
+        function showSlide(i) {
+            const slides = document.querySelectorAll(".slide");
+            if (i >= slides.length) index = 0;
+            if (i < 0) index = slides.length - 1;
+            document.querySelector(".slider").style.transform = `translateX(${-index * 100}%)`;
+        }
+        function nextSlide() { index++; showSlide(index); }
+        function prevSlide() { index--; showSlide(index); }
+        setInterval(nextSlide, 4000);
+
+
+        function openMenu() {
+    let menu = document.getElementById("mobileMenu");
+    menu.style.left = "0";
+    menu.style.zIndex = "1000"; // Ensures it stays on top
+}
+function closeMenu() {
+    let menu = document.getElementById("mobileMenu");
+    menu.style.left = "-100%";
+}
+document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+
+</script>
+
+
+<script>
+    document.querySelectorAll(".sub-course").forEach(course => {
+    course.addEventListener("click", function () {
+        let courseLink = this.getAttribute("data-link");
+        window.location.href = courseLink; // Redirect to the clicked course page
+    });
+});
+
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select elements
+        const linkButton = document.querySelector(".mobile-register-btn");
+        const registerButton = document.querySelector(".register-btn");
+
+        // Set click event to open registration.html
+        function openRegistrationPage() {
+            window.location.href = "registration.html";
+        }
+
+        // Attach event listeners
+        if (linkButton) linkButton.addEventListener("click", openRegistrationPage);
+        if (registerButton) registerButton.addEventListener("click", openRegistrationPage);
+    });
+</script>
+
+
+    
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>

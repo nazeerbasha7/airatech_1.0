@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registration.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="airalogo.png" alt="JVS IT Logo" class="logo">
+        </div>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <div class="navbar-right">
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i> Ameerpet, Hyderabad
+            </div>
+            <div class="info">
+                <i class="fas fa-phone-alt"></i> +91 9030 913 914
+            </div>
+            <button class="register-btn">REGISTER NOW</button>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="#">Certifications</a>
+        <a href="#">Internships</a>
+        <a href="#">Placements</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" onclick="closeMenu()">X</button>
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="#">Certifications</a>
+        <a href="#">Internships</a>
+        <a href="#">Placements</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+        <a href="#" class="mobile-register-btn">REGISTER</a>
+    </div>
+    
+ 
+ 
+     
+    <div class="registration-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="linuximg.jpg" alt="Form Image">
+             
+        </div>
+        
+        <!-- Right Section - Form -->
+        <div class="right-section">
+            <h2>Register for <span>Bright Career</span></h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Mobile Number" required>
+                     
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Course</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us about yourself"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+ 
+ 
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+    
+            
+
+
+    <!-- Scripts -->
+    <script>
+        function openMenu() {
+            document.getElementById("mobileMenu").style.left = "0";
+        }
+        function closeMenu() {
+            document.getElementById("mobileMenu").style.left = "-100%";
+        }
+
+        document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+    </script>
+
+      
+
+<script>
+    function openMenu() { document.getElementById("mobileMenu").style.left = "0"; }
+        function closeMenu() { document.getElementById("mobileMenu").style.left = "-100%"; }
+        document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+    let index = 0;
+        function showSlide(i) {
+            const slides = document.querySelectorAll(".slide");
+            if (i >= slides.length) index = 0;
+            if (i < 0) index = slides.length - 1;
+            document.querySelector(".slider").style.transform = `translateX(${-index * 100}%)`;
+        }
+        function nextSlide() { index++; showSlide(index); }
+        function prevSlide() { index--; showSlide(index); }
+        setInterval(nextSlide, 4000);
+
+
+        function openMenu() {
+    let menu = document.getElementById("mobileMenu");
+    menu.style.left = "0";
+    menu.style.zIndex = "1000"; // Ensures it stays on top
+}
+function closeMenu() {
+    let menu = document.getElementById("mobileMenu");
+    menu.style.left = "-100%";
+}
+document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+
+</script>
+
+
+ 
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select elements
+        const linkButton = document.querySelector(".mobile-register-btn");
+        const registerButton = document.querySelector(".register-btn");
+
+        // Set click event to open registration.html
+        function openRegistrationPage() {
+            window.location.href = "registration.html";
+        }
+
+        // Attach event listeners
+        if (linkButton) linkButton.addEventListener("click", openRegistrationPage);
+        if (registerButton) registerButton.addEventListener("click", openRegistrationPage);
+    });
+</script>
+
+
+
+ 
+
+</body>
+</html>
